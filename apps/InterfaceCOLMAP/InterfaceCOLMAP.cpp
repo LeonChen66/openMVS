@@ -242,8 +242,8 @@ struct Camera {
 	struct CameraEqualTo {
 		bool operator()(const Camera& _Left, const Camera& _Right) const {
 			return _Left.model == _Right.model &&
-				_Left.width == _Right.width && _Left.height == _Right.height &&
-				_Left.params == _Right.params;
+				   _Left.width == _Right.width && _Left.height == _Right.height &&
+				   _Left.params == _Right.params && _Left.ID == _Right.ID;
 		}
 	};
 
